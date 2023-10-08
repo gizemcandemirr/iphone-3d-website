@@ -170,9 +170,17 @@ const WebgiViewer = forwardRef((props, ref) => {
     <div id="webgi-canvas-container" ref={canvasContainerRef}>
       <canvas id="webgi-canvas" ref={canvasRef} />
       {previewMode && (
-        <button className="button" onClick={handleExit}>
-          Exit
-        </button>
+        <>
+          <button className="button" onClick={handleExit}>
+            Exit
+          </button>
+          <h1
+            className="descriptipn-preview-mode"
+            style={{ marginTop: "35px" }}
+          >
+            Turn left and right to explore iPhone
+          </h1>
+        </>
       )}
     </div>
   );
