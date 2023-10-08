@@ -1,9 +1,13 @@
+import Jumbotron from "./components/Jumbotron";
+import Navbar from "./components/Nav";
+import SoundSection from "./components/SoundSection";
 
 function App() {
-
   return (
     <div className="App">
-      Hello
+      <Navbar />
+      <Jumbotron />
+      <SoundSection />
     </div>
   );
 }
