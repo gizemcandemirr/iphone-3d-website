@@ -63,9 +63,9 @@ const WebgiViewer = forwardRef((props, ref) => {
   }));
 
   const memorizedScrollAnimation = useCallback(
-    (positon, target, isMobileorTablet, onUpdate) => {
+    (positon, target, isMobile, onUpdate) => {
       if (positon && target && onUpdate) {
-        scrollAnimation(positon, target, isMobileorTablet, onUpdate);
+        scrollAnimation(positon, target, isMobile, onUpdate);
       }
     },
     []
